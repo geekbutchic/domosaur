@@ -26,8 +26,21 @@ feathered.addEventListener('click', function () {
 })
 
 row.addEventListener('click', function () {
-    row.toggleRowBackground()
+    row.toggleBackground
 })
+
+let colorIsWhite = true;
+toggleBackground = () => {
+    if (colorIsWhite) {
+        row.style.backgroundColor = 'black';
+        colorIsWhite = false;
+    } else {
+        row.style.backgroundColor = 'white';
+        colorIsWhite = true;
+    }
+}
+
+
 
 
 // const makeOrange = () => {
@@ -52,16 +65,16 @@ row.addEventListener('click', function () {
 // }
 
 
-let colorIsWhite = true;
-const toggleRowBackground = () => {
-    if (colorIsWhite) {
-    row.style.backgroundColor = 'black'
-    colorIsWhite = false;
-    }   else {
-        row.style.backgroundColor = 'white'
-        colorIsWhite = true;
-    }
-}
+// let colorIsWhite = true;
+// const toggleRowBackground = () => {
+//     if (colorIsWhite) {
+//     row.style.backgroundColor = 'black'
+//     colorIsWhite = false;
+//     }   else {
+//         row.style.backgroundColor = 'white'
+//         colorIsWhite = true;
+//     }
+// }
 
 
 // const toggleRowBackground = () => {
@@ -69,7 +82,7 @@ const toggleRowBackground = () => {
 // }
 
 // feathered.addEventListener('click', makeTransparent);
-// row.addEventListener('click', toggleRowBackground);
+row.addEventListener('click', toggleRowBackground);
 // ankylosaur.addEventListener('mouseenter', toggleSize);
 // ankylosaur.addEventListener('mouseleave', toggleSize);
 
