@@ -13,7 +13,6 @@ messWithMeParagraph.style.backgroundColor = 'lightgreen';
 triceratops.style.width = '324px';
 tRex.style.display = 'none';
 
-
 messWithMeWord.addEventListener('click', function () {
     messWithMeWord.style.color = 'blue';
 })
@@ -26,9 +25,9 @@ feathered.addEventListener('click', function () {
     feathered.style.opacity = 0.5;
 })
 
-// row.addEventListener('click', function () {
-//     row.toggleRowBackground()
-// })
+row.addEventListener('click', function () {
+    row.toggleRowBackground()
+})
 
 
 // const makeOrange = () => {
@@ -66,11 +65,11 @@ const toggleRowBackground = () => {
 
 
 // const toggleRowBackground = () => {
-//     row.style.backgroundColor = row.style.backgroundColor === 'black' ? 'white' : 'black'
+//     row.style.backgroundColor = row.style.backgroundColor === 'white' ? 'black' : 'white'
 // }
 
 // feathered.addEventListener('click', makeTransparent);
-row.addEventListener('click', toggleRowBackground);
+// row.addEventListener('click', toggleRowBackground);
 // ankylosaur.addEventListener('mouseenter', toggleSize);
 // ankylosaur.addEventListener('mouseleave', toggleSize);
 
